@@ -8,7 +8,30 @@ aws lambda（node.js） serverless例
   * https://qiita.com/katsuhiko/items/de971929ffa750ec9b62
 
 
+# Local invoke test
 
+https://booko.medium.com/serverless-%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7lambda%E9%96%A2%E6%95%B0%E5%AE%9F%E8%A1%8C-%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4-894758e5cdd4
+
+## Local function invocation
+```bash
+serverless invoke local -f functionName
+```
+## Local function invocation with data
+```bash
+serverless invoke local -f functionName -d '{ "data": "hello world" }'
+```
+## Local function invocation with data passing
+```bash
+serverless invoke local -f functionName -p path/to/file.json
+# OR
+serverless invoke local -f functionName -p path/to/file.yaml
+```
+## Local function invocation, setting environment variables
+```bash
+serverless invoke local -f functionName -e VAR1=value1
+# more than one variable
+serverless invoke local -f functionName -e VAR1=value1 -e VAR2=value2
+```
 
 
 ## deploy log
