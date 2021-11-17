@@ -5,8 +5,33 @@ aws lambda（node.js） serverless例
 
 * 参考URL
   * https://serverless.co.jp/blog/25/
+    * servelese インストールとhandler.js serverless.yml作成
   * https://qiita.com/katsuhiko/items/de971929ffa750ec9b62
-
+    * Mac環境なのでAWS credentials config の設定
+    * 設定しないと下記のエラー発生
+```bash
+Serverless: Configuration warning at 'service.name': should match pattern "^[a-zA-Z][0-9a-zA-Z-]+$"
+Serverless:  
+Serverless: Learn more about configuration validation here: http://slss.io/configuration-validation
+Serverless:  
+ 
+ Serverless Error ----------------------------------------
+ 
+  AWS profile "dynmodbLocal" doesn't seem to be configured
+ 
+  Get Support --------------------------------------------
+     Docs:          docs.serverless.com
+     Bugs:          github.com/serverless/serverless/issues
+     Issues:        forum.serverless.com
+ 
+  Your Environment Information ---------------------------
+     Operating System:          darwin
+     Node Version:              14.15.3
+     Framework Version:         2.64.1
+     Plugin Version:            5.5.0
+     SDK Version:               4.3.0
+     Components Version:        3.17.1
+```
 
 # Local invoke test
 
